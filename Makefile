@@ -295,7 +295,7 @@ clean:
 
 ALL_TRAININGS = $(sort $(patsubst %.mk,%,$(notdir $(wildcard mk/*.mk))))
 
-all: $(foreach p,$(ALL_TRAININGS),full-$(p)-slides.pdf full-$(p)-labs.pdf $(p)-agenda.pdf)
+all: $(foreach p,$(ALL_TRAININGS),full-$(p)-slides.pdf $(p)-agenda.pdf)
 
 list-courses:
 	@echo $(ALL_TRAININGS)
